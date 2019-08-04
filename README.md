@@ -29,5 +29,6 @@ module.exports = {
 
 ## API
 ### POST `/webhooks`
+- post body depends on the event type, see more on github's [documentation](https://developer.github.com/v3/activity/events/types)
 - requires event type and event id headers from github to be in the request
 - routes the webhook to all plugins that use the event
